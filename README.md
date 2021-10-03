@@ -1,14 +1,15 @@
 <!--
  * @Author: DLHTX
  * @Date: 2021-10-02 19:02:00
- * @LastEditTime: 2021-10-03 10:47:53
+ * @LastEditTime: 2021-10-03 11:31:16
  * @LastEditors: DLHTX
  * @Description: In User Settings Edit
  * @FilePath: \chrome extensionf:\Desktop\Patient Registration\README.md
 -->
 <h1 align="center">Patient Registration ✨</h1>
+- Default admin account : admin 123456
 
-![Home](./screenshot/home.png)
+[![4q6PeS.png](https://z3.ax1x.com/2021/10/03/4q6PeS.png)](https://imgtu.com/i/4q6PeS)
 
 | website✨     |   Doc📦  |  
 | ----------- | ----------- | 
@@ -48,14 +49,11 @@ Because the project is deployed on NAS at home, the address may be unstable. You
 - Springboot
 - Swagger
 ## Screenshot
-![Admin Panel](./screenshot/admin_panel.png)
+[![4q6PeS.png](https://z3.ax1x.com/2021/10/03/4q6PeS.png)](https://imgtu.com/i/4q6PeS)
+[![4q6psf.png](https://z3.ax1x.com/2021/10/03/4q6psf.png)](https://imgtu.com/i/4q6psf)
+[![4q6SQP.png](https://z3.ax1x.com/2021/10/03/4q6SQP.png)](https://imgtu.com/i/4q6SQP)
 
-![home](./screenshot/home.png)
-
-![login](./screenshot/login.png)
-
-![patient_regisration](./screenshot/patient_regisration.png)
-
+[![4q69L8.png](https://z3.ax1x.com/2021/10/03/4q69L8.png)](https://imgtu.com/i/4q69L8)
 
 ## Browser support
 
@@ -66,10 +64,28 @@ Compatible with any mainstream browser except IE
 | Edge                                                         | last 2 versions                                              | last 2 versions                                              | last 2 versions                                              |
 
 
-## 项目启动
-```
-npm i 
-npm run start
-```
-- 最后在浏览器中访问：`http://localhost:3000`
+## Project start
+Default admin account : admin 123456
+The project adopts the front and backend separation mode
 
+## Front end started locally
+
+```
+cd frontend
+yarn install / npm install
+yarn start /npm start
+```
+
+## Back end started locally
+### Preparation
+- Environment:Java SDK version: 1.8.0
+- DataBase:Mysql 5.6 (go to backend/src/main/resources/databaseSQL and run this sql to generate databse)
+- Maven:Run Maven install to install maven package
+- application-dev.properties:change your mysql url and port and password etc in application-dev.properties datasource setting
+### start
+```
+Run backend/src/main/java/Application in your ide
+```
+## deploy
+If you want to use CI/CD,i perfer to use github workflows and docker.You can run the dockerfile in project
+if your do not want to use github workflows,I also use Jenkins in my work to configure the automated deployment and build process,You can refer to jenkinsfile to adapt your project.
