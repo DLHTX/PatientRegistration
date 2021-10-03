@@ -1,0 +1,18 @@
+.root {
+  
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.container {
+    width: 600px;
+    margin:40px auto;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+}

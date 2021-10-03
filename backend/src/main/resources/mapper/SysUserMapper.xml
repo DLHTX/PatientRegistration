@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.SysUserMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.SysUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="head_img" jdbcType="VARCHAR" property="head_img" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nick_name" />
+    <result column="info" jdbcType="VARCHAR" property="info" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="auth_id" jdbcType="INTEGER" property="auth_id" />
+    <result column="creat_time" jdbcType="TIMESTAMP" property="creat_time" />
+  </resultMap>
+
+
+  <select id="findUser" parameterType="com.company.project.model.SysUser" resultType="com.company.project.model.dto.loginReturn">
+      select user.* from user where name = #{name}
+    </select>
+
+  <select id="findUserList" resultType="com.company.project.model.dto.findUserListDto">
+    SELECT sys_user.*,sys_auth.auth_name FROM (sys_user,sys_auth) where `sys_user`.auth_id = `sys_auth`.id
+  </select>
+</mapper>
