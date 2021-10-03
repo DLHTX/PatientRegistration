@@ -61,7 +61,7 @@ const PatientForm = () => {
       if (status === 'done') {
         message.success(`${info.file.name} file uploaded successfully.`);
         form.setFieldsValue({
-          driver_license: info.file.response.data
+          driver_license: info.file.response.data[0].url
         })
       } else if (status === 'error') {
         message.error(`${info.file.name} file upload failed.`);
