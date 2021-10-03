@@ -1,5 +1,8 @@
-
+/*
+ * @Date: 2021-10-02 20:47:13
+ * @Author: DLHTX
+ * @LastEditors: DLHTX
+ */
 export const PORT = 8080
-
-export const SERVER = "http://localhost:3001/api"
-export const IMG_SERVER = "http://localhost:3001"
+export const SERVER = process.env.REACT_APP_SERVER 
+export const IMG_SERVER = process.env.REACT_APP_IMG_SERVER 

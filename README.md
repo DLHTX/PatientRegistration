@@ -1,7 +1,7 @@
 <!--
  * @Author: DLHTX
  * @Date: 2021-10-02 19:02:00
- * @LastEditTime: 2021-10-03 11:31:16
+ * @LastEditTime: 2021-10-03 12:26:38
  * @LastEditors: DLHTX
  * @Description: In User Settings Edit
  * @FilePath: \chrome extensionf:\Desktop\Patient Registration\README.md
@@ -13,7 +13,7 @@
 
 | website✨     |   Doc📦  |  
 | ----------- | ----------- | 
-| [website](http://www.dlhtx.top:9090) | [Doc](https://github.com/DLHTX/patienentRegistration) 
+| [website](http://www.dlhtx.top:9090) | [Doc](http://www.dlhtx.top:3002/swagger-ui.html#/file-controller) 
 
 ## Project experience address
 Because the project is deployed on NAS at home, the address may be unstable. You can deploy it on the server to learn and experience the project
@@ -87,5 +87,6 @@ yarn start /npm start
 Run backend/src/main/java/Application in your ide
 ```
 ## deploy
-If you want to use CI/CD,i perfer to use github workflows and docker.You can run the dockerfile in project
-if your do not want to use github workflows,I also use Jenkins in my work to configure the automated deployment and build process,You can refer to jenkinsfile to adapt your project.
+- If you want to use CI/CD,i perfer to use github workflows and docker.You can run the docker.sh in project,but However, our server ports are different and may need to be changed
+
+- If your do not want to use github workflows,I also use Jenkins in my work to configure the automated deployment and build process,You can refer to jenkinsfile to adapt your project.
