@@ -23,6 +23,8 @@ public class PatientRegistration {
 
     private Date appointment_time;
 
+    private String sex;
+
     /**
      * @return id
      */
@@ -133,5 +135,19 @@ public class PatientRegistration {
      */
     public void setAppointment_time(Date appointment_time) {
         this.appointment_time = appointment_time;
+    }
+
+    /**
+     * @return sex
+     */
+    public String getSex() {
+        return sex;
+    }
+
+    /**
+     * @param sex
+     */
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 }

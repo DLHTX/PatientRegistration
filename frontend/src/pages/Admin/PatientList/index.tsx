@@ -10,7 +10,7 @@
  */
 import React, { useEffect, useMemo, useState } from 'react';
 import styles from "./style.module.css"
-import { Table } from 'antd';
+import { Table, Image } from 'antd';
 import moment from 'moment';
 import patientApi from "../../../apis/patient"
 import useAsyncFn from '../../../hooks/useAsyncFn';
@@ -43,6 +43,11 @@ const PatientList = () => {
       key: 'name',
     },
     {
+      title: 'Sex',
+      dataIndex: 'sex',
+      key: 'sex',
+    },
+    {
       title: 'Birth',
       dataIndex: 'birth',
       key: 'birth',
@@ -69,7 +74,12 @@ const PatientList = () => {
       render: (driver_license: string) => (
         <>
           {
-            driver_license != 'undefined' && driver_license ? <img src={IMG_SERVER + driver_license} style={{ height: '50px' }}></img> : null
+            driver_license != 'undefined' && driver_license ?
+              <Image
+                width={50}
+                src={IMG_SERVER + driver_license}
+              />
+              : null
           }
         </>
       ),

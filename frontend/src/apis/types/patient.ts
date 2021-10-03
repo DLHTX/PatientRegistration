@@ -6,6 +6,7 @@
 export interface IPatient {
     name: string
     birth: string
+    sex: string
     phone: string
     email: string
     address?: string | null

@@ -4,7 +4,7 @@ import com.company.project.core.Service;
 
 
 /**
- * Created by DLHTX on 2021/10/02.
+ * Created by DLHTX on 2021/10/03.
  */
 public interface PatientRegistrationService extends Service<PatientRegistration> {
 

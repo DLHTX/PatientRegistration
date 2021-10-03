@@ -13,5 +13,6 @@
     <result column="address" jdbcType="VARCHAR" property="address" />
     <result column="driver_license" jdbcType="VARCHAR" property="driver_license" />
     <result column="appointment_time" jdbcType="TIMESTAMP" property="appointment_time" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
   </resultMap>
 </mapper>

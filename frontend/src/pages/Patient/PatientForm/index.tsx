@@ -94,6 +94,7 @@ const PatientForm = () => {
     const addPatientParam: IPatient = {
       name: String(form.getFieldValue(formField.name)),
       birth: String(form.getFieldValue(formField.birth)),
+      sex: String(form.getFieldValue(formField.sex)),
       email: String(form.getFieldValue(formField.email)),
       address: form.getFieldValue(formField.address) ? String(form.getFieldValue(formField.address)) : null,
       phone: String(form.getFieldValue(formField.phone)),
